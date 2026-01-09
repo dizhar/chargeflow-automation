@@ -1,0 +1,1500 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login;verify-login-page-is-displayed",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Verify login page is displayed",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 976250958
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the login page",
+            "match": {
+              "location": "src/steps/login.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1065167083
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see the page title \"Chargeflow QA Challenge\"",
+            "match": {
+              "location": "src/steps/login.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 85636666
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I should see the subtitle \"Sign in to continue\"",
+            "match": {
+              "location": "src/steps/login.steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1942583
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 36317417
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Login with valid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 178905583
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the login page",
+            "match": {
+              "location": "src/steps/login.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 237987875
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I login with valid credentials",
+            "match": {
+              "location": "src/steps/login.steps.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 181429000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should be logged in successfully",
+            "match": {
+              "location": "src/steps/login.steps.ts:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 653686500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 27978667
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-with-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Login with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 180029042
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the login page",
+            "match": {
+              "location": "src/steps/login.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 330136832
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I enter email \"invalid@email.com\"",
+            "match": {
+              "location": "src/steps/login.steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53117416
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I enter password \"wrongpassword\"",
+            "match": {
+              "location": "src/steps/login.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41904375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I click the sign in button",
+            "match": {
+              "location": "src/steps/login.steps.ts:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37813291
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "I should see an error message",
+            "match": {
+              "location": "src/steps/login.steps.ts:78"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 557054874
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 32496334
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-with-empty-email",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Login with empty email",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 197203916
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the login page",
+            "match": {
+              "location": "src/steps/login.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 510021625
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "I clear the email field",
+            "match": {
+              "location": "src/steps/login.steps.ts:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47469665
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "I enter password \"Password123!\"",
+            "match": {
+              "location": "src/steps/login.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45682917
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I click the sign in button",
+            "match": {
+              "location": "src/steps/login.steps.ts:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31632375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I should see email validation error",
+            "match": {
+              "location": "src/steps/login.steps.ts:83"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14859042
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 16312624
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-with-empty-password",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Login with empty password",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 165232667
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the login page",
+            "match": {
+              "location": "src/steps/login.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 221952416
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "I enter email \"qa@chargeflow.com\"",
+            "match": {
+              "location": "src/steps/login.steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50702957
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "I clear the password field",
+            "match": {
+              "location": "src/steps/login.steps.ts:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40008041
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "I click the sign in button",
+            "match": {
+              "location": "src/steps/login.steps.ts:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34522249
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "I should see password validation error",
+            "match": {
+              "location": "src/steps/login.steps.ts:88"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14745167
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 15034916
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-with-both-fields-empty",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "Login with both fields empty",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 155950209
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the login page",
+            "match": {
+              "location": "src/steps/login.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 222815874
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 34,
+            "name": "I clear the email field",
+            "match": {
+              "location": "src/steps/login.steps.ts:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46152832
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "I clear the password field",
+            "match": {
+              "location": "src/steps/login.steps.ts:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40254666
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "I click the sign in button",
+            "match": {
+              "location": "src/steps/login.steps.ts:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35982332
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
+            "name": "I should see email validation error",
+            "match": {
+              "location": "src/steps/login.steps.ts:83"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13690582
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "I should see password validation error",
+            "match": {
+              "location": "src/steps/login.steps.ts:88"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3125958
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 14903417
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-with-sql-injection",
+        "keyword": "Scenario",
+        "line": 41,
+        "name": "Login with SQL injection",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 161243459
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the login page",
+            "match": {
+              "location": "src/steps/login.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 230236834
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 42,
+            "name": "I enter email \"qa@chargeflow.com' OR '1'='1\"",
+            "match": {
+              "location": "src/steps/login.steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48452666
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "I enter password \"Password123!\"",
+            "match": {
+              "location": "src/steps/login.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38377083
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "I click the sign in button",
+            "match": {
+              "location": "src/steps/login.steps.ts:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40088958
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 45,
+            "name": "I should see email validation error",
+            "match": {
+              "location": "src/steps/login.steps.ts:83"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14359709
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 16239333
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@critical",
+            "line": 40
+          },
+          {
+            "name": "@security",
+            "line": 40
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-with-xss-attack",
+        "keyword": "Scenario",
+        "line": 49,
+        "name": "Login with XSS attack",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 163357624
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the login page",
+            "match": {
+              "location": "src/steps/login.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 219230750
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 50,
+            "name": "I enter email \"<script>alert('XSS')</script>@test.com\"",
+            "match": {
+              "location": "src/steps/login.steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47549625
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "I enter password \"Password123!\"",
+            "match": {
+              "location": "src/steps/login.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36198791
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 52,
+            "name": "I click the sign in button",
+            "match": {
+              "location": "src/steps/login.steps.ts:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34469374
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 53,
+            "name": "I should see email validation error",
+            "match": {
+              "location": "src/steps/login.steps.ts:83"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13181083
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 54,
+            "name": "the page should not execute any scripts",
+            "match": {
+              "location": "src/steps/login.steps.ts:140"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2647624
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 15557583
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@critical",
+            "line": 47
+          },
+          {
+            "name": "@security",
+            "line": 47
+          },
+          {
+            "name": "@debug",
+            "line": 48
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-with-excessive-password-length",
+        "keyword": "Scenario",
+        "line": 56,
+        "name": "Login with excessive password length",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 161293416
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the login page",
+            "match": {
+              "location": "src/steps/login.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 211272625
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 57,
+            "name": "I enter email \"qa@chargeflow.com\"",
+            "match": {
+              "location": "src/steps/login.steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46378124
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 58,
+            "name": "I enter a password with 1000 characters",
+            "match": {
+              "location": "src/steps/login.steps.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38814249
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 59,
+            "name": "I click the sign in button",
+            "match": {
+              "location": "src/steps/login.steps.ts:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24940291
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 60,
+            "name": "I should see an error message",
+            "match": {
+              "location": "src/steps/login.steps.ts:78"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 520110541
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 23574791
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-with-special-characters-in-email",
+        "keyword": "Scenario",
+        "line": 62,
+        "name": "Login with special characters in email",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 187373166
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the login page",
+            "match": {
+              "location": "src/steps/login.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 561099916
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 63,
+            "name": "I enter email \"test!#$%@example.com\"",
+            "match": {
+              "location": "src/steps/login.steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52153874
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 64,
+            "name": "I enter password \"Password123!\"",
+            "match": {
+              "location": "src/steps/login.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44206624
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 65,
+            "name": "I click the sign in button",
+            "match": {
+              "location": "src/steps/login.steps.ts:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27089082
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 66,
+            "name": "I should see an error message",
+            "match": {
+              "location": "src/steps/login.steps.ts:78"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 422618875
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 24061457
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-when-email-contains-leading-and-trailing-spaces",
+        "keyword": "Scenario",
+        "line": 68,
+        "name": "login when email contains leading and trailing spaces",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 181792500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the login page",
+            "match": {
+              "location": "src/steps/login.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 584146167
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 69,
+            "name": "I enter email \" qa@chargeflow.com \"",
+            "match": {
+              "location": "src/steps/login.steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50632999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 70,
+            "name": "I enter password \"Password123!\"",
+            "match": {
+              "location": "src/steps/login.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39332333
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 71,
+            "name": "I click the sign in button",
+            "match": {
+              "location": "src/steps/login.steps.ts:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29305459
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 72,
+            "name": "I should be logged in successfully",
+            "match": {
+              "location": "src/steps/login.steps.ts:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 574552207
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 30638125
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;case-sensitivity-check-for-email",
+        "keyword": "Scenario",
+        "line": 74,
+        "name": "Case sensitivity check for email",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 179656500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the login page",
+            "match": {
+              "location": "src/steps/login.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 518326666
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 75,
+            "name": "I enter email \"QA@CHARGEFLOW.COM\"",
+            "match": {
+              "location": "src/steps/login.steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57805582
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 76,
+            "name": "I enter password \"Password123!\"",
+            "match": {
+              "location": "src/steps/login.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37173999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 77,
+            "name": "I click the sign in button",
+            "match": {
+              "location": "src/steps/login.steps.ts:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33507625
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 78,
+            "name": "I should see an error message",
+            "match": {
+              "location": "src/steps/login.steps.ts:78"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 524404000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 26766416
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;case-sensitivity-check-for-password",
+        "keyword": "Scenario",
+        "line": 80,
+        "name": "Case sensitivity check for password",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 180992291
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the login page",
+            "match": {
+              "location": "src/steps/login.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 227609959
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 81,
+            "name": "I enter email \"qa@chargeflow.com\"",
+            "match": {
+              "location": "src/steps/login.steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36509208
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 82,
+            "name": "I enter password \"password123!\"",
+            "match": {
+              "location": "src/steps/login.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35973749
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 83,
+            "name": "I click the sign in button",
+            "match": {
+              "location": "src/steps/login.steps.ts:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33293083
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 84,
+            "name": "I should see an error message",
+            "match": {
+              "location": "src/steps/login.steps.ts:78"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 420809208
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 24098291
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;direct-url-access-without-authentication",
+        "keyword": "Scenario",
+        "line": 87,
+        "name": "Direct URL access without authentication",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 173814666
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the login page",
+            "match": {
+              "location": "src/steps/login.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 229309541
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 88,
+            "name": "I navigate directly to the dashboard URL",
+            "match": {
+              "location": "src/steps/login.steps.ts:111"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 997922958
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 89,
+            "name": "I should be redirected to the login page",
+            "match": {
+              "location": "src/steps/login.steps.ts:130"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2418333
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 28325749
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@critical",
+            "line": 86
+          },
+          {
+            "name": "@security",
+            "line": 86
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;successful-logout",
+        "keyword": "Scenario",
+        "line": 92,
+        "name": "Successful logout",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 199869082
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the login page",
+            "match": {
+              "location": "src/steps/login.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 552321375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 93,
+            "name": "I am logged in",
+            "match": {
+              "location": "src/steps/login.steps.ts:96"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 885670500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 94,
+            "name": "I click the logout button",
+            "match": {
+              "location": "src/steps/login.steps.ts:106"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 51321625
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 95,
+            "name": "I should be logged out",
+            "match": {
+              "location": "src/steps/login.steps.ts:125"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000332
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 96,
+            "name": "I should be redirected to the login page",
+            "match": {
+              "location": "src/steps/login.steps.ts:130"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 741458
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 21427999
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@critical",
+            "line": 91
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;browser-back-button-after-logout",
+        "keyword": "Scenario",
+        "line": 100,
+        "name": "Browser back button after logout",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 178525291
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the login page",
+            "match": {
+              "location": "src/steps/login.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 236443875
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 101,
+            "name": "I am logged in",
+            "match": {
+              "location": "src/steps/login.steps.ts:96"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 948811666
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 102,
+            "name": "I click the logout button",
+            "match": {
+              "location": "src/steps/login.steps.ts:106"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42955125
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 103,
+            "name": "I should be logged out",
+            "match": {
+              "location": "src/steps/login.steps.ts:125"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 636000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 104,
+            "name": "I click the browser back button",
+            "match": {
+              "location": "src/steps/login.steps.ts:120"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4973792
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 105,
+            "name": "I should be redirected to the login page",
+            "match": {
+              "location": "src/steps/login.steps.ts:130"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1911916
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 17942957
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@critical",
+            "line": 98
+          },
+          {
+            "name": "@security",
+            "line": 98
+          },
+          {
+            "name": "@debug",
+            "line": 99
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login",
+    "tags": [],
+    "uri": "src/features/login.feature"
+  }
+]

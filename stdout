@@ -1,0 +1,22 @@
+.F--F.........................................
+
+Failures:
+
+1) Scenario: Verify login page is displayed # src/features/login.feature:6
+   ✔ Before # src/support/hooks.ts:8
+   ✖ Given I am on the login page # src/steps/login.steps.ts:11
+       Error: function timed out, ensure the promise resolves within 5000 milliseconds
+           at Timeout.<anonymous> (/Users/danielizhar/dev/chargeflow-automation/node_modules/@cucumber/cucumber/src/time.ts:52:14)
+           at listOnTimeout (node:internal/timers:581:17)
+           at process.processTimers (node:internal/timers:519:7)
+   - Then I should see the page title "Chargeflow QA Challenge" # src/steps/login.steps.ts:16
+   - And I should see the subtitle "Sign in to continue" # src/steps/login.steps.ts:24
+   ✖ After # src/support/hooks.ts:12
+       Error: function timed out, ensure the promise resolves within 5000 milliseconds
+           at Timeout.<anonymous> (/Users/danielizhar/dev/chargeflow-automation/node_modules/@cucumber/cucumber/src/time.ts:52:14)
+           at listOnTimeout (node:internal/timers:581:17)
+           at process.processTimers (node:internal/timers:519:7)
+
+7 scenarios (1 failed, 6 passed)
+32 steps (1 failed, 2 skipped, 29 passed)
+0m16.967s (executing steps: 0m16.934s)
