@@ -45,7 +45,6 @@ Feature: Login
     Then I should see email validation error
 
   @critical @security
-  @debug
   Scenario: Login with XSS attack
     When I enter email "<script>alert('XSS')</script>@test.com"
     And I enter password "Password123!"
@@ -96,7 +95,6 @@ Feature: Login
     And I should be redirected to the login page
 
   @critical @security
-  @debug
   Scenario: Browser back button after logout
     Given I am logged in
     When I click the logout button

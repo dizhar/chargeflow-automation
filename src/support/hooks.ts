@@ -15,9 +15,16 @@ setDefaultTimeout(60000);
 BeforeAll(async function () {
   console.log("🚀 Starting test suite...");
 
+  // Create directories for screenshots and allure results
   const screenshotsDir = "reports/screenshots";
+  const allureResultsDir = "allure-results";
+
   if (!fs.existsSync(screenshotsDir)) {
     fs.mkdirSync(screenshotsDir, { recursive: true });
+  }
+
+  if (!fs.existsSync(allureResultsDir)) {
+    fs.mkdirSync(allureResultsDir, { recursive: true });
   }
 });
 
@@ -34,14 +41,19 @@ After(async function (this: CustomWorld, scenario) {
       `${scenarioName}_${timestamp}.png`
     );
 
-    // Take screenshot
-    const screenshot = await this.page.screenshot({ path: screenshotPath });
+    // Take screenshot as buffer for Allure
+    const screenshot = await this.page.screenshot({
+      path: screenshotPath,
+      fullPage: true,
+    });
 
-    // Attach to report (works with both Cucumber HTML and Allure)
+    // Attach screenshot to Allure report with proper mime type
     this.attach(screenshot, "image/png");
 
     console.log(`📸 Screenshot saved: ${screenshotPath}`);
   }
+
+  // Always close the page after scenario
   await this.cleanup();
 });
 

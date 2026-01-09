@@ -13,22 +13,6 @@ Given("I am on the login page", async function (this: CustomWorld) {
   await loginPage.open();
 });
 
-Then(
-  "I should see the page title {string}",
-  async function (this: CustomWorld, expectedTitle: string) {
-    const title = await loginPage.getPageTitle();
-    expect(title).toBe(expectedTitle);
-  }
-);
-
-Then(
-  "I should see the subtitle {string}",
-  async function (this: CustomWorld, expectedSubtitle: string) {
-    const subtitle = await loginPage.getPageSubtitle();
-    expect(subtitle).toBe(expectedSubtitle);
-  }
-);
-
 When(
   "I enter email {string}",
   async function (this: CustomWorld, email: string) {
@@ -116,11 +100,6 @@ When(
     await this.page.waitForLoadState("networkidle");
   }
 );
-
-When("I click the browser back button", async function (this: CustomWorld) {
-  await this.page.goBack();
-  await this.page.waitForLoadState("domcontentloaded");
-});
 
 Then("I should be logged out", async function (this: CustomWorld) {
   loginPage = new LoginPage(this.page);
